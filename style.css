@@ -72,11 +72,11 @@ select{
 }
 
 .image-item {
-    flex: 1 1 200px; 
+    flex: 1 1 300px; 
     margin: 0.5em;
     text-align: center;
     background-color: #fff;
-    padding: 0.5em;
+    padding: 1em;
     border-radius: 10px;
     box-shadow: 0 8px 30px #802230;
 }
@@ -84,7 +84,7 @@ select{
 
 .image-item img {
     width: 200px;
-    height: 200px; 
+    height: 250px; 
     object-fit: cover;
     border: 3px solid #802230;
     border-radius: 20px;
