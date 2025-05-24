@@ -1,0 +1,175 @@
+@font-face {
+    font-family: 'cats';
+    src: url(CatsFont-Regular.ttf);
+}
+@font-face {
+    font-family: 'caterine';
+    src: url(Catherine.ttf);
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #ffb6c1;
+}
+
+header {
+    font-family: 'Cats';
+    background-color: #d86f7e;
+    color: #802230;
+    text-align: center;
+    box-shadow: 0 4px 15px #802230;
+}
+
+main {
+    flex: 1;
+    padding: 2em;
+}
+
+.filter-section {
+    margin-bottom: 1.5em;
+    text-align: center;
+    font-family: 'Caterine';
+    font-weight: bold;
+}
+
+option{
+    font-family: 'Caterine';
+    font-weight: bold;
+}
+
+option:hover{
+    background-color: #fff;
+}
+select{
+    font-family: 'Caterine';
+    font-weight: bold;
+}
+
+#color-filter {
+    padding: 0.5em;
+    border-radius: 5px;
+    border: 1px solid #802230;
+    background-color: #fff;
+    transition: border-color 0.3s;
+}
+
+#color-filter:hover {
+    border-color: #802230;
+    background-color: #d86f7e;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    padding: 0 10px;
+}
+
+.image-item {
+    flex: 1 1 300px; 
+    margin: 0.5em;
+    text-align: center;
+    background-color: #fff;
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 0 8px 30px #802230;
+}
+
+
+.image-item img {
+    width: 400px;
+    height: 300px; 
+    object-fit: cover;
+    border: 3px solid #802230;
+    border-radius: 20px;
+}
+
+.image-item p {
+    font-weight: bold;
+    color: #802230;
+    margin-top: 0.5em;
+}
+
+p{
+    font-family: 'Cats';
+}
+
+footer {
+    font-weight: bold;
+    background-color: #d86f7e;
+    color: #802230;
+    text-align: center;
+    padding: 1.5em 0;
+    margin-top: auto;
+    font-family: 'Caterine';
+}
+
+.filter-image.achromatomaly {
+    filter: grayscale(100%);
+}
+
+.filter-image.deuteranomaly {
+    filter: hue-rotate(180deg);
+}
+
+.filter-image.tritanomaly {
+    filter: sepia(100%) saturate(300%) hue-rotate(-50deg);
+}
+
+.button-container {
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+button {
+    position: static;
+    padding: 10px;
+    font-family: 'Arial';
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #d86f7e;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #802230;
+}
+
+@media (max-width: 768px) {
+    .image-item {
+        flex: 1 1 100%;
+    }
+
+    .button-container {
+        position: fixed;
+        top: auto;
+        right: auto;
+        margin: 10px;
+        bottom: 20px;
+        right: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    .image-item img {
+        width: 100%; 
+        height: auto;
+    }
+}

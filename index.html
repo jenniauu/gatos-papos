@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gatos & Papos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Gatos i Papos</h1>
+    </header>
+    <main>
+        <div class="button-container">
+            <button id="increase-font">A+</button>
+            <button id="reset-font">A•</button>
+            <button id="decrease-font">A-</button>
+        </div>
+        <div class="filter-section">
+            <label for="color-filter">Filtro de Daltonismo:</label>
+            <select id="color-filter">
+                <option value="default">Cores padrão</option>
+                <option value="achromatomaly">Acromatopsia</option>
+                <option value="deuteranomaly">Deuteranomalia</option>
+                <option value="tritanomaly">Tritanomalia</option>
+            </select>
+        </div>
+        <div class="image-container">
+            <div class="image-item">
+                <img src="img1.jpg" alt="Gatos fofocando" class="filter-image" width="400">
+                <p>Fofocat</p>
+            </div>
+            <div class="image-item">
+                <img src="img2.jpg" alt="Gatos namorando" class="filter-image" width="500">
+                <p>Lovecats</p>
+            </div>
+            <div class="image-item">
+                <img src="img3.jpg" alt="Gatos interagindo" class="filter-image" width="500">
+                <p>Gangue de Gatos</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        Desenvolvido por Jennifer Rodrigues Barbosa
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
