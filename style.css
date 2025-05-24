@@ -84,7 +84,7 @@ select{
 
 .image-item img {
     width: 200px;
-    height: 100px; 
+    height: 200px; 
     object-fit: cover;
     border: 3px solid #802230;
     border-radius: 20px;
